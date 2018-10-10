@@ -59,15 +59,14 @@ header {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 2em;
+    color: #fff; }
 
 .nav-galery {
   margin-right: auto; }
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 2em;
-  color: #fff; }
 
 .navigation li {
   -webkit-transition: all 0.5s ease;
@@ -93,24 +92,6 @@ header {
     -o-transition: all 1.8s ease;
     transition: all 1.8s ease; }
 
-/*.navigation .rotate-nav {
-	transition: all 0.5s ease;
-}
-
-	.navigation .rotate-nav:hover {
-		background: #555;
-		box-shadow: inset -5px 6px 41px -1px rgba(0,0,0,0.49);
-		transform: rotate(90deg);
-		transition: all 0.5s ease;
-	}*/
-/*.rotate-nav .nav-txt { 
-  transition: all .4s ease; 
-}
-  .nav-txt:hover { 
-  	transform: scale(0.8);
-  	transform: rotate(-90deg);
-  	transition: all .5s ease;
-  }*/
 @media all and (max-width: 700px) {
   .navigation {
     -webkit-box-orient: vertical;
@@ -139,11 +120,10 @@ header {
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap; }
-
-.grid a {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 250px;
-  flex: 1 1 250px; }
+  .grid a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 250px;
+    flex: 1 1 250px; }
 
 @media all and (max-width: 700px) {
   .grid {
@@ -170,9 +150,8 @@ header {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease; }
-
-.image:hover img {
-  opacity: 1; }
+  .grid img:hover {
+    opacity: 1; }
 
 /* ===-----about section----->*/
 .about {
@@ -208,16 +187,14 @@ header {
   -ms-flex: 0 0 250px;
   flex: 0 0 250px;
   height: 150px; }
-
-.about-image img {
-  width: 90%;
-  height: 90%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  padding: 30px; }
+  .about-image img {
+    width: 90%;
+    height: 90%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 30px; }
 
 .description {
   padding: 20px; }
-
-.description p {
-  text-indent: 10px; }
+  .description p {
+    text-indent: 10px; }

@@ -44,17 +44,17 @@ header {
 	padding: 0;
 	display: flex;
 	justify-content: flex-end;
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 2em;
+		color: #fff;
+	}
 }
 
 .nav-galery{
 	margin-right: auto;
-}
-
-.navigation a {
-	text-decoration: none;
-	display: block;
-	padding: 2em;
-	color: #fff;
 }
 
 .navigation li {
@@ -75,26 +75,6 @@ header {
     transition: all 1.8s ease;
   } 
 }
-
-/*.navigation .rotate-nav {
-	transition: all 0.5s ease;
-}
-
-	.navigation .rotate-nav:hover {
-		background: #555;
-		box-shadow: inset -5px 6px 41px -1px rgba(0,0,0,0.49);
-		transform: rotate(90deg);
-		transition: all 0.5s ease;
-	}*/
-
-/*.rotate-nav .nav-txt { 
-  transition: all .4s ease; 
-}
-  .nav-txt:hover { 
-  	transform: scale(0.8);
-  	transform: rotate(-90deg);
-  	transition: all .5s ease;
-  }*/ 
 
 @media all and (max-width: 700px) {
 	.navigation {
@@ -123,11 +103,13 @@ header {
 .grid {
 	display: flex;
 	flex-wrap: nowrap;
+
+	a {
+		flex: 1 1 250px;
+	}
 }
 
-.grid a {
-	flex: 1 1 250px;
-}
+
 
 @media all and (max-width: 700px) {
 	.grid {
@@ -147,10 +129,10 @@ header {
 	object-fit: cover;
 	opacity: .3;
 	transition: all 1s ease;
-}
 
-.image:hover img {
-	opacity: 1;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 /* ===-----about section----->*/
@@ -175,25 +157,24 @@ header {
 	.about-image {
 		order: 1;
 	}
-
 }
 
 .about-image {
 	flex: 0 0 250px;
 	height: 150px;
-}
 
-.about-image img {
-	width: 90%;
-	height: 90%;
-	object-fit: cover;
-	padding: 30px;
+	img {
+		width: 90%;
+		height: 90%;
+		object-fit: cover;
+		padding: 30px;
+	}
 }
 
 .description {
 	padding: 20px;
-}
 
-.description p {
-	text-indent: 10px
+	p {
+		text-indent: 10px
+	}
 }
