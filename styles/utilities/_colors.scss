@@ -1,0 +1,19 @@
+$colors: (
+  primary: (
+		base: #BD9AEA,
+		light: lighten(#BD9AEA, 5%),
+		dark: darken(#BD9AEA, 5%)
+  ),
+  akcent: (
+  	base: #B2766B,
+  	light: lighten(#B2766B, 5%),
+  	dark: darken(#B2766B, 5%)
+  ),
+  back-color: (
+    base: #666666,
+    light: lighten(#666666, 6%),
+    dark: darken(#666666, 2%)
+  ),
+);
+
+$black: darken(#666666, 10%);

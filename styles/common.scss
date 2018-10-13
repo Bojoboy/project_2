@@ -1,0 +1,56 @@
+
+@import './utilities/variables';
+@import './utilities/reset';
+@import './utilities/colors';
+@import './utilities/stylesheet';
+@import './utilities/animations';
+
+html, body {
+	height: 100%;
+}
+
+header, footer {
+	padding: 23px;
+	color: #fff;
+	background-color: map-get(map-get($colors, back-color), dark);
+	font-family: Roboto;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+	font-size: 20px;
+}
+
+h1, h2, h3 {
+	font-family: Roboto;
+	font-weight: bold;
+	color: map-get(map-get($colors, akcent), dark);
+}
+
+p {
+	font-family: Roboto;
+	font-weight: 500;
+}
+
+#wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+hr {
+	margin: 10px 0;
+	border: 0;
+	border-top: 2px solid map-get(map-get($colors, back-color), light);
+}
+
+.thin-border {
+	border-top-width: $thinBorder; 
+}
+
+@import './parts/navigation';
+@import './parts/galery';
+@import './parts/about';
+@import './parts/footer';
