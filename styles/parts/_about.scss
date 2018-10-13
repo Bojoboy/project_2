@@ -1,0 +1,49 @@
+a {
+	color: map-get(map-get($colors, akcent), dark);
+}
+
+a:hover {
+	opacity: 0.9;
+}
+
+.about {
+	margin: 20px 0; 
+	display: flex;
+	flex-direction: column;
+}
+
+.about-item {
+	margin: 20px 0;
+	display: flex;
+}
+
+@media all and (max-width: 700px) {
+	.about-item {
+		flex-direction: column;
+	}	
+
+	.about-image {
+		order: 1;
+	}
+}
+
+.about-image {
+	flex: 0 0 250px;
+	height: 150px;
+
+	img {
+		width: 90%;
+		height: 90%;
+		object-fit: cover;
+		padding: 30px;
+	}
+}
+
+.description {
+	padding: 20px;
+
+	p {
+		text-indent: 10px
+	}
+}
+
